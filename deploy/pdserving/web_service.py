@@ -77,9 +77,13 @@ class DetOp(Op):
 
 class RecOp(Op):
     def init_op(self):
+<<<<<<< Updated upstream
         self.ocr_reader = OCRReader(
             char_dict_path="../../ppocr/utils/ppocr_keys_v1.txt"
         )
+=======
+        self.ocr_reader = OCRReader(char_dict_path="ppocr/utils/ppocr_keys_v1.txt")
+>>>>>>> Stashed changes
 
         self.get_rotate_crop_image = GetRotateCropImage()
         self.sorted_boxes = SortedBoxes()
